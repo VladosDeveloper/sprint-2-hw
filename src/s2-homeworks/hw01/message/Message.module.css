@@ -1,0 +1,69 @@
+.message {
+    margin-bottom: 30px;
+
+}
+
+.imageAndText {
+    display: flex;
+    min-height: 60px;
+    justify-content: flex-end;
+}
+
+.imageAndText img {
+    order: 1;
+    max-width: 48px;
+    width: 100%;
+    height: 48px;
+    align-self: flex-end;
+}
+
+.text {
+    position: relative;
+    padding: 8px 12px;
+    color: black;
+    border-radius: 8px 8px 0 8px;
+    margin-right: 12px;
+    box-shadow: 1px 1px 4px 1px rgba(29, 33, 38, .3);
+    z-index: 1212312312313;
+    background-color: #0066CC;
+
+}
+
+.text:after {
+    content: "";
+    position: absolute;
+    bottom: calc(6% - 0.67em);
+    right: -6px; /* Смещение хвостика влево */
+    width: 0;
+    height: 0;
+    border-left: 14px solid #0066CC; /* Левый край хвостика */
+    border-top: 14px solid transparent; /* Верхний край хвостика */
+    border-bottom: 14px solid transparent; /* Нижний край хвостика */
+    transform:  rotate(-90deg); /* Поворот на 45 градусов */
+    filter: drop-shadow(-1px 6px 6px rgba(29, 33, 38, .3)); /* Тень снизу */
+    z-index: -10;
+
+}
+
+.name {
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 4px;
+
+}
+
+.messageText {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+
+.time {
+    margin: 5px 4px 0 0;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000;
+    justify-self: flex-end;
+}
